@@ -18,7 +18,7 @@ class Apple:
 
 
 @curses_application
-class ShakeApplication:
+class SnakeApplication:
     def __init__(self):
         self.delay = 1
         self.x = 0
@@ -190,8 +190,3 @@ class ShakeApplication:
         stdscr.refresh()
         stdscr.getkey()
         self.is_playing = False
-
-
-if __name__ == "__main__":
-    app = ShakeApplication()
-    app.start()
