@@ -54,7 +54,10 @@ class SnakeApplication:
 
     def __draw_blocks(self):
         for block in self.blocks:
-            self.stdscr.addstr(block.y, block.x, self.character_avatar)
+            try:
+                self.stdscr.addch(block.y, block.x, self.character_avatar)
+            except curses.error:
+                continue
 
     def __is_tail_touched(self):
         for block in self.blocks:
@@ -70,7 +73,7 @@ class SnakeApplication:
         )
 
     def __draw_apple(self):
-        self.stdscr.addstr(self.apple.y, self.apple.x, self.apple_avatar)
+        self.stdscr.addch(self.apple.y, self.apple.x, self.apple_avatar)
 
     def __draw_game_over(self):
         height, width = self.stdscr.getmaxyx()
