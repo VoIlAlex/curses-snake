@@ -17,7 +17,7 @@ setup(
     packages=find_packages('.'),
     # Start with a small number and increase it with
     # every change you make https://semver.org
-    version='1.0.1',
+    version='1.0.3',
     # Chose a license from here: https: //
     # help.github.com / articles / licensing - a -
     # repository. For example: MIT
@@ -32,9 +32,9 @@ setup(
     # Your email
     author_email='ilya.vouk@gmail.com',
     # Either the link to your github or to your website
-    url='https://github.com/VoIlAlex',
+    url='https://github.com/VoIlAlex/curses-snake',
     # Link from which the project can be downloaded
-    download_url='https://github.com/VoIlAlex/curses-snake/archive/v1.0.1.tar.gz',
+    download_url='https://github.com/VoIlAlex/curses-snake/archive/v1.0.3.tar.gz',
     # List of keywords
     keywords=[
         'game', 'console', 'curses', 'snake'
